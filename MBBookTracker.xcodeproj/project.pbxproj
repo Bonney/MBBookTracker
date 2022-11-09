@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0232A064291C066A002209F9 /* MyBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A063291C066A002209F9 /* MyBooksView.swift */; };
+		0232A066291C0C8B002209F9 /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A065291C0C8B002209F9 /* DiscoverView.swift */; };
+		0232A068291C12A0002209F9 /* AccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A067291C12A0002209F9 /* AccountButton.swift */; };
+		0232A06A291C12DC002209F9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A069291C12DC002209F9 /* AccountView.swift */; };
+		0232A06C291C132C002209F9 /* SheetDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A06B291C132C002209F9 /* SheetDismissButton.swift */; };
 		02F467EE291BEFA300177284 /* MBBookTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F467ED291BEFA300177284 /* MBBookTrackerApp.swift */; };
 		02F467F0291BEFA300177284 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F467EF291BEFA300177284 /* Persistence.swift */; };
 		02F467F3291BEFA300177284 /* MBBookTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02F467F1291BEFA300177284 /* MBBookTracker.xcdatamodeld */; };
 		02F467F5291BEFA300177284 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F467F4291BEFA300177284 /* ContentView.swift */; };
 		02F467F7291BEFA500177284 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F467F6291BEFA500177284 /* Assets.xcassets */; };
 		02F467FB291BEFA500177284 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02F467FA291BEFA500177284 /* Preview Assets.xcassets */; };
+		02F46802291BEFBB00177284 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F46801291BEFBB00177284 /* HomeView.swift */; };
+		02F46804291BF0C600177284 /* HomeHeaderCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F46803291BF0C600177284 /* HomeHeaderCarousel.swift */; };
+		02F46806291BF27200177284 /* HomeFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F46805291BF27200177284 /* HomeFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0232A063291C066A002209F9 /* MyBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBooksView.swift; sourceTree = "<group>"; };
+		0232A065291C0C8B002209F9 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverView.swift; sourceTree = "<group>"; };
+		0232A067291C12A0002209F9 /* AccountButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountButton.swift; sourceTree = "<group>"; };
+		0232A069291C12DC002209F9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		0232A06B291C132C002209F9 /* SheetDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDismissButton.swift; sourceTree = "<group>"; };
+		0232A06D291C184C002209F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		02F467EA291BEFA300177284 /* MBBookTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBBookTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F467ED291BEFA300177284 /* MBBookTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookTrackerApp.swift; sourceTree = "<group>"; };
 		02F467EF291BEFA300177284 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -24,6 +38,9 @@
 		02F467F6291BEFA500177284 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02F467F8291BEFA500177284 /* MBBookTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MBBookTracker.entitlements; sourceTree = "<group>"; };
 		02F467FA291BEFA500177284 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02F46801291BEFBB00177284 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		02F46803291BF0C600177284 /* HomeHeaderCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderCarousel.swift; sourceTree = "<group>"; };
+		02F46805291BF27200177284 /* HomeFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +57,7 @@
 		02F467E1291BEFA300177284 = {
 			isa = PBXGroup;
 			children = (
+				0232A06D291C184C002209F9 /* README.md */,
 				02F467EC291BEFA300177284 /* MBBookTracker */,
 				02F467EB291BEFA300177284 /* Products */,
 			);
@@ -59,6 +77,14 @@
 				02F467ED291BEFA300177284 /* MBBookTrackerApp.swift */,
 				02F467EF291BEFA300177284 /* Persistence.swift */,
 				02F467F4291BEFA300177284 /* ContentView.swift */,
+				0232A065291C0C8B002209F9 /* DiscoverView.swift */,
+				02F46801291BEFBB00177284 /* HomeView.swift */,
+				0232A067291C12A0002209F9 /* AccountButton.swift */,
+				0232A069291C12DC002209F9 /* AccountView.swift */,
+				0232A06B291C132C002209F9 /* SheetDismissButton.swift */,
+				02F46805291BF27200177284 /* HomeFeedCell.swift */,
+				0232A063291C066A002209F9 /* MyBooksView.swift */,
+				02F46803291BF0C600177284 /* HomeHeaderCarousel.swift */,
 				02F467F6291BEFA500177284 /* Assets.xcassets */,
 				02F467F8291BEFA500177284 /* MBBookTracker.entitlements */,
 				02F467F1291BEFA300177284 /* MBBookTracker.xcdatamodeld */,
@@ -146,8 +172,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				02F467F3291BEFA300177284 /* MBBookTracker.xcdatamodeld in Sources */,
+				0232A068291C12A0002209F9 /* AccountButton.swift in Sources */,
+				02F46804291BF0C600177284 /* HomeHeaderCarousel.swift in Sources */,
+				02F46806291BF27200177284 /* HomeFeedCell.swift in Sources */,
+				0232A06A291C12DC002209F9 /* AccountView.swift in Sources */,
+				0232A064291C066A002209F9 /* MyBooksView.swift in Sources */,
 				02F467EE291BEFA300177284 /* MBBookTrackerApp.swift in Sources */,
+				0232A066291C0C8B002209F9 /* DiscoverView.swift in Sources */,
+				0232A06C291C132C002209F9 /* SheetDismissButton.swift in Sources */,
 				02F467F5291BEFA300177284 /* ContentView.swift in Sources */,
+				02F46802291BEFBB00177284 /* HomeView.swift in Sources */,
 				02F467F0291BEFA300177284 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

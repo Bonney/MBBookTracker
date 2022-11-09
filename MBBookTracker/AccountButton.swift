@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct AccountButton: View {
+    @State private var sheet: Bool = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button {
+            sheet.toggle()
+        } label: {
+            Image(systemName: "person.circle.fill")
+        }
+        .sheet(isPresented: $sheet) {
+            AccountView()
+        }
     }
 }
 
