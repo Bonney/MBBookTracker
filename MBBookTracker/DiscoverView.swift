@@ -18,8 +18,8 @@ struct DiscoverView: View {
                     ScrollView(.horizontal) {
                         HStack {
                             ForEach(0..<10) { _ in
-                                HomeFeedCell(showHeader: false, showAddButton: true, showReview: false)
-                                    .frame(width: 200, height: 200)
+                                HomeFeedCell(showHeader: false, showAddButton: true, showStars: false, showReview: false)
+                                    .frame(width: 260)
                                     .padding(.leading, 8)
                             }
                         }

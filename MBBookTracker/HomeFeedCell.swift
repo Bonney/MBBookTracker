@@ -29,11 +29,10 @@ struct HomeFeedCell: View {
             }
 
             bookDetails()
-
-
-            if (showReview || showStars) {
-                Divider().padding(.vertical, 4)
-            }
+//
+//            if (showReview || showStars) {
+//                Divider().padding(.vertical, 4)
+//            }
 
             if showStars {
                 starRating()
@@ -41,10 +40,6 @@ struct HomeFeedCell: View {
 
             if showReview {
                 writtenReview()
-            }
-
-            if showAddButton {
-                addToLibraryButton()
             }
         }
     }
@@ -72,25 +67,25 @@ struct HomeFeedCell: View {
         .font(.subheadline)
     }
 
-    var bookHeight: Double = 100
+    var bookHeight: Double = 90
     var bookWidth: Double { bookHeight * 2/3 }
 
+    func bookCover() -> some View {
+        Image("bookcover")
+            .resizable()
+            .aspectRatio(2/3, contentMode: .fit)
+            .cornerRadius(4, antialiased: true)
+    }
+
     func bookDetails() -> some View {
-        HStack(alignment: .center) {
-            RoundedRectangle(cornerRadius: 4, style: .continuous)
+        HStack(alignment: .top) {
+            bookCover()
                 .frame(width: bookWidth, height: bookHeight)
                 .foregroundStyle(color)
-                .overlay(alignment: .top) {
-                    Image(systemName: "bookmark.fill")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .padding()
-                        .foregroundStyle(.regularMaterial)
-                }
 
             VStack(alignment: .leading, spacing: 4) {
-                Text("The 7½ Deaths of Evelyn Hardcastle")
-                    .font(.system(.title3, design: .serif))
+                Text("The 7 ½ Deaths of Evelyn Hardcastle")
+                    .font(.system(.headline, design: .serif))
                     .fontWeight(.medium)
                     .foregroundStyle(.primary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -104,9 +99,15 @@ struct HomeFeedCell: View {
                     .fontWeight(.semibold)
                     .textCase(.uppercase)
                     .foregroundStyle(.tint)
+
+                if showAddButton {
+                    addToLibraryButton()
+                        .padding(.top, 4)
+                }
             }
         }
     }
+
     func addToLibraryButton() -> some View {
         Menu {
             Section {
@@ -117,12 +118,13 @@ struct HomeFeedCell: View {
                 Text("The 7 ½ Deaths of Evelyn Hardcastle")
             }
         } label: {
-            Text("Add to Library")
+            Text("Add Book \(Image(systemName: "chevron.down"))")
+                .foregroundStyle(.primary)
                 .frame(maxWidth: .infinity, alignment: .center)
         }
         .menuStyle(.button)
         .buttonStyle(.borderedProminent)
-        .controlSize(.regular)
+        .controlSize(.small)
     }
 
     func starRating() -> some View {
@@ -152,6 +154,7 @@ struct HomeFeedCell: View {
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris bibendum, mi sit amet porta cursus, tortor mauris volutpat libero, ut laoreet mi diam eu sem. Integer volutpat in nisl id ornare. Fusce vulputate lorem lectus, a ultrices libero feugiat at. Curabitur tincidunt congue enim, mollis finibus neque faucibus et. Vivamus eget lacus id est tincidunt bibendum at sit amet eros. Suspendisse eget vulputate ante, non fringilla urna. Fusce vel iaculis tortor, non imperdiet justo. Donec ultricies ante a nulla luctus, laoreet ultricies mi venenatis. In rutrum pulvinar eros, interdum ultrices leo porta eu. Aenean ultrices id purus laoreet eleifend. Ut malesuada nunc ligula, ut posuere diam fringilla quis.")
                 .lineLimit(4)
                 .font(.subheadline)
+
         }
 
         HStack {
@@ -169,8 +172,10 @@ struct HomeFeedCell: View {
         }
         .symbolVariant(.fill)
         .buttonStyle(.bordered)
-        .controlSize(.regular)
-        .padding(.vertical, 4)
+//        .tint(Color.accentColor)
+        .controlSize(.small)
+        .padding(.top, 4)
+
     }
 
 
@@ -181,22 +186,35 @@ struct HomeFeedCell_Previews: PreviewProvider {
         NavigationStack {
             List {
                 Section {
-                    HomeFeedCell()
+                    HomeFeedCell(showHeader: true, showAddButton: true, showStars: true, showReview: true)
+                } header: {
+                    Text("Header, Add, Stars, Review")
                 }
+
                 Section {
-                    HomeFeedCell(showHeader: false)
+                    HomeFeedCell(showHeader: false, showAddButton: true, showStars: true, showReview: true)
+                } header: {
+                    Text("Add, Stars, Review")
                 }
-                Section {
-                    HomeFeedCell(showAddButton: false)
-                }
-                Section {
-                    HomeFeedCell(showReview: false)
-                }
-                Section {
-                    HomeFeedCell(showHeader: false, showAddButton: false, showReview: false)
-                }
+
                 Section {
                     HomeFeedCell(showHeader: true, showAddButton: true, showStars: false, showReview: false)
+                } header: {
+                    Text("Header, Add")
+                }
+
+                Section {
+                    HomeFeedCell()
+                }
+                
+                Section {
+                    HomeFeedCell(showHeader: true, showAddButton: true, showStars: false, showReview: false)
+                }
+                Section {
+                    HomeFeedCell(showHeader: false, showAddButton: false, showStars: false, showReview: false)
+                }
+                Section {
+                    HomeFeedCell(showHeader: false, showAddButton: true, showStars: false, showReview: false)
                 }
                 Section {
                     HomeFeedCell(showHeader: true, showAddButton: true, showStars: true, showReview: false)

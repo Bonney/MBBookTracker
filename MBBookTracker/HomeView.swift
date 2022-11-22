@@ -14,7 +14,7 @@ struct HomeView: View {
             List {
                 ForEach(0..<20) { _ in
                     Section {
-                        HomeFeedCell()
+                        HomeFeedCell(showReview: Bool.random())
                     }
                 }
 
@@ -27,18 +27,11 @@ struct HomeView: View {
                 }
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
                     cameraScanButton()
-                    notificationsButton()
+                    NotificationsButton()
                 }
             }
         }
     }
-
-    func notificationsButton() -> some View {
-        Button { } label: {
-            Image(systemName: "bell.badge")
-        }
-    }
-
     func cameraScanButton() -> some View {
         Button { } label: {
             Image(systemName: "camera.viewfinder")

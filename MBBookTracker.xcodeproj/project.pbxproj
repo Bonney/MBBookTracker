@@ -12,6 +12,8 @@
 		0232A068291C12A0002209F9 /* AccountButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A067291C12A0002209F9 /* AccountButton.swift */; };
 		0232A06A291C12DC002209F9 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A069291C12DC002209F9 /* AccountView.swift */; };
 		0232A06C291C132C002209F9 /* SheetDismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0232A06B291C132C002209F9 /* SheetDismissButton.swift */; };
+		027638762922A40B00167857 /* SingleBookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027638752922A40B00167857 /* SingleBookView.swift */; };
+		02E32BE6291D3F06006A0537 /* NotificationsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02E32BE5291D3F06006A0537 /* NotificationsButton.swift */; };
 		02F467EE291BEFA300177284 /* MBBookTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F467ED291BEFA300177284 /* MBBookTrackerApp.swift */; };
 		02F467F0291BEFA300177284 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F467EF291BEFA300177284 /* Persistence.swift */; };
 		02F467F3291BEFA300177284 /* MBBookTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02F467F1291BEFA300177284 /* MBBookTracker.xcdatamodeld */; };
@@ -30,6 +32,8 @@
 		0232A069291C12DC002209F9 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		0232A06B291C132C002209F9 /* SheetDismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetDismissButton.swift; sourceTree = "<group>"; };
 		0232A06D291C184C002209F9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		027638752922A40B00167857 /* SingleBookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleBookView.swift; sourceTree = "<group>"; };
+		02E32BE5291D3F06006A0537 /* NotificationsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsButton.swift; sourceTree = "<group>"; };
 		02F467EA291BEFA300177284 /* MBBookTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBBookTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F467ED291BEFA300177284 /* MBBookTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MBBookTrackerApp.swift; sourceTree = "<group>"; };
 		02F467EF291BEFA300177284 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -82,7 +86,9 @@
 				0232A067291C12A0002209F9 /* AccountButton.swift */,
 				0232A069291C12DC002209F9 /* AccountView.swift */,
 				0232A06B291C132C002209F9 /* SheetDismissButton.swift */,
+				02E32BE5291D3F06006A0537 /* NotificationsButton.swift */,
 				02F46805291BF27200177284 /* HomeFeedCell.swift */,
+				027638752922A40B00167857 /* SingleBookView.swift */,
 				0232A063291C066A002209F9 /* MyBooksView.swift */,
 				02F46803291BF0C600177284 /* HomeHeaderCarousel.swift */,
 				02F467F6291BEFA500177284 /* Assets.xcassets */,
@@ -174,7 +180,9 @@
 				02F467F3291BEFA300177284 /* MBBookTracker.xcdatamodeld in Sources */,
 				0232A068291C12A0002209F9 /* AccountButton.swift in Sources */,
 				02F46804291BF0C600177284 /* HomeHeaderCarousel.swift in Sources */,
+				027638762922A40B00167857 /* SingleBookView.swift in Sources */,
 				02F46806291BF27200177284 /* HomeFeedCell.swift in Sources */,
+				02E32BE6291D3F06006A0537 /* NotificationsButton.swift in Sources */,
 				0232A06A291C12DC002209F9 /* AccountView.swift in Sources */,
 				0232A064291C066A002209F9 /* MyBooksView.swift in Sources */,
 				02F467EE291BEFA300177284 /* MBBookTrackerApp.swift in Sources */,
